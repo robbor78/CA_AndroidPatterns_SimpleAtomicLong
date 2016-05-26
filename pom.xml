@@ -18,4 +18,23 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <configuration>
+                    <mainClass>edu.vuum.mocca.BuggyLongTest</mainClass>
+                    <arguments>
+                        <argument>-i 20</argument>
+                        <argument>-s SEMA</argument>
+                        <argument>-t 1</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
 </project>
